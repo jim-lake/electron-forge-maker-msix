@@ -1,3 +1,3 @@
-declare module "rxjs" {
+declare module 'rxjs' {
   type Observable<T> = any;
 }

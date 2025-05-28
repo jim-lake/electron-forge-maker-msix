@@ -1,7 +1,7 @@
 import { MakerBase, MakerOptions } from '@electron-forge/maker-base';
 import { ForgePlatform } from '@electron-forge/shared-types';
 export interface MakerMsiXConfig {
-    appManifest: string;
+    appManifest: string | ((params: MakerOptions) => Promise<string>);
     packageName: string;
     packageAssets: string;
     windowsKitPath?: string;
